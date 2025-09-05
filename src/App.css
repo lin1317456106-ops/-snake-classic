@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+button {
+  font-family: 'Courier New', monospace;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  canvas {
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+/* 防止移动端双击缩放 */
+* {
+  touch-action: manipulation;
+}
